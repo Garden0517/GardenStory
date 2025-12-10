@@ -1,0 +1,297 @@
+html, body {
+            width: 100%;
+            margin: 0; /* 기본 여백 제거 */
+            padding: 0;
+        }
+
+body{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    font-family: Pretendard;
+}
+
+section {
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.cover{
+    display: flex;
+    top:20%;
+    position: absolute;
+    z-index: 1000;
+    font-size: 3rem;
+    font-weight: 700;
+    color: aliceblue;
+    gap:5%
+}
+
+.scene1, .scene2, .scene3, .scene4, .scene5, .scene6, .scene7, .scene8, .scene9,
+.scene0, .scene10 {
+    height: 300vh; 
+    position: relative;
+}
+ /* {
+    height: 200vh; 
+    position: relative; /* 자식 요소의 fixed 위치 기준을 뷰포트로 만듦 
+} */
+
+.scene1 svg, .scene2 svg, .scene3 svg, .scene4 svg, .scene5 svg, .scene6 svg, .scene7 svg, .scene8 svg, .scene9 svg, .scene0 svg, .scene10 svg {
+    /* 뷰포트 중앙에 SVG를 고정시키고 비율 유지 */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    /* 크기는 뷰포트 대비 원하는 최대 크기로 설정 */
+    max-width: auto; 
+    max-height: 100vh; 
+    /* 고정된 위치에서 중앙 정렬 */
+    transform: translate(-50%, -50%); 
+    /* SVG의 원래 종횡비 유지 */
+    width: auto; 
+    height: auto;
+    /* (옵션) 애니메이션 중 다른 요소 위에 오도록 z-index 설정 */
+    z-index: 10;
+    opacity: 0;
+}
+
+.scene1.scroll-out svg, .scene2.scroll-out svg, .scene3.scroll-out svg, .scene4.scroll-out svg, .scene5.scroll-out svg, .scene6.scroll-out svg, .scene7.scroll-out svg, .scene8.scroll-out svg, .scene9.scroll-out svg, .scene0.scroll-out svg, .scene10.scroll-out svg{
+    position: absolute; /* 부모인 .first-scene을 따라 스크롤됨 */
+    top: auto; /* fixed 설정 해제 */
+    bottom: 0; /* .first-scene의 바닥에 위치하도록 설정 */
+    transform: translate(-50%, 0%); /* bottom: 0; 에 맞게 translate만 X축으로 조정 */
+    opacity: 1 !important;
+}
+
+
+.grasses{
+    transform-origin: 50% 100%; 
+}
+
+.sun.sun-move{
+    animation: move-side 4s ease infinite alternate;
+}
+
+.Myseed.seed-move{
+    animation-delay: 1s;
+    animation: seed-move-side 5s ease infinite alternate;
+}
+
+@keyframes move-side {
+    0% {
+        transform: translateX(0);
+    }
+    50%{
+        transform: translateX(35%);
+    }
+    100% {
+         transform: translateX(70%);
+    }
+}
+
+@keyframes seed-move-side {
+    0% {
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(-34%);
+    }
+    75%{
+        transform: translateX(0);
+    }
+    100% {
+         transform: translateX(36%);
+    }
+}
+
+.hole{
+    transform-origin: 85px 74px; 
+}
+
+.scene3 .seed{
+    transform-origin: 85px -50px;
+}
+
+.water.wave-water{
+    transform-origin: 85px 50px;
+    animation: ripple-wave 3s ease-out infinite;
+}
+
+@keyframes ripple-wave {
+    0% {
+        transform: translate(0%, -50%) scale(0); 
+        opacity: 1; 
+    }
+    100% {
+        transform: translate(0%, -20%) scale(3);
+        opacity: 0;
+    }
+}
+
+.grassShadow{
+    transform-origin: 85px 35px;
+}
+
+.rain.drop-rain{
+    animation: drop-rain 3s infinite;
+}
+@keyframes drop-rain {
+    0% {
+        transform: translateY(-100%);
+
+    }
+
+    100% {
+        transform: translateY(50%);
+        opacity: 0.5;
+    }
+}
+
+.sun5{
+    transform-origin: 27px 15px;
+}
+
+.leave1 {
+    transform-origin: 85px 70px;
+}
+.leave2 {
+    transform-origin: 85px 70px;
+}
+
+.yellowFlower{
+    transform-origin: 146px 58px;
+    animation: Flower-rotation 3s ease-out infinite;
+}
+
+.blueFlower{
+    transform-origin: 23px 47px;
+    animation: Flower-rotation 3s ease-out infinite;
+}
+
+.pinkFlower{
+    transform-origin: 128px 37px;
+    animation: Flower-rotation 3s ease-out infinite;
+}
+@keyframes Flower-rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.wood{
+    transform-origin: 100px 100px;
+}
+.deepleave{
+    transform-origin: 108px 45px;
+}
+.shallowleave{
+    transform-origin: 96px 51px;
+}
+.img1{
+    transform-origin: 75px 40px;
+}
+.apple circle.apple-move{
+    transform-origin: 50% 50%;
+    animation: apple-move 3s ease-out infinite;
+}
+@keyframes apple-move {
+    0% {
+        transform: rotate(-2deg);
+    }
+    50% {
+        transform: rotate(4deg);
+    }
+    100% {
+        transform: rotate(-2deg);
+    }
+}
+
+.scene9 .yellowFlower{
+    transform-origin: 146px 58px;
+    animation: Flower-rotation 3s ease-out infinite;
+}
+
+.scene9 .blueFlower{
+    transform-origin: 23px 47px;
+    animation: Flower-rotation 3s ease-out infinite;
+}
+
+.scene9 .pinkFlower{
+    transform-origin: 128px 37px;
+    animation: Flower-rotation 3s ease-out infinite;
+}
+@keyframes Flower-rotation {
+    0% {
+        transform: rotate(0deg);
+        scale: calc(0.8);
+    }
+    50% {
+        transform: rotate(360deg);
+        scale: calc(1);
+    }
+    100% {
+        transform: rotate(0deg);
+        scale: calc(0.8);
+    }
+}
+
+.tree, .flower, .leave{
+    transform-origin: 50% 50%;
+}
+
+.flower, .leave{
+    transform-origin: 50% 80%;
+}
+
+.textbox{
+    top: 50%;
+    right: 50%;
+    width: 30%;
+    position: absolute;
+    z-index: 1000;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 5%;
+    margin-left: 1%;
+    /* border-radius: 20%; */
+    /* backdrop-filter: blur(10px); */
+}
+
+.active {
+    animation: svg-anima 3s ;
+}
+@keyframes svg-anima {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.active1 {
+    animation: svg-anima1 3s ;
+}
+@keyframes svg-anima1 {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.all{
+    transform-origin: 50% 50%;
+    animation: svg-anima 3s ;
+}
+.leave10{
+    transform-origin: 50% 80%;
+}

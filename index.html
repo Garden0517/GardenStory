@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garden</title>
+     <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <section class="scene0">
+        <div class="cover">
+            <div class="first">Garden</div>
+            <div class="second">Story</div>
+        </div>
+        <svg viewBox="0 0 170 100" xmlns="http://www.w3.org/2000/svg" style="width: auto; height: 100%; margin: auto; display: block; background-color: black;">
+            <!-- 해 -->
+            <circle class="sun5" cx="27" cy="15" r="7" fill="#FFDF7B"/>
+
+            <!-- 산 -->
+            <ellipse cx="108" cy="65" rx="30" ry="60" fill="#98B244"/>
+            <ellipse cx="147" cy="85" rx="34" ry="60" fill="#C9DB57"/>
+            <circle cx="24" cy="77" r="42" fill="#98B244"/>
+            <circle cx="72" cy="80" r="38" fill="#C9DB57"/>
+            <rect x="0" y="70" width="170" height="35" fill="#7BA738"/>
+            
+            <g>
+                <ellipse cx="10" cy="85" rx="20" ry="12" fill="#699631" stroke="black" stroke-width="0.5" transform="rotate(110, 10, 85)"/>
+                <line x1="14" y1="73" x2="5" y2="95" stroke="black" stroke-width="0.5" stroke-linecap="round"/>
+                <ellipse cx="24" cy="92" rx="18" ry="10" fill="#7FB134" stroke="black" stroke-width="0.5" transform="rotate(150, 24, 92)"/>
+                <line x1="34" y1="85" x2="14" y2="99" stroke="black" stroke-width="0.5" stroke-linecap="round"/>
+            </g>
+
+            <g>
+                <ellipse cx="164" cy="81" rx="22" ry="12" fill="#699631" stroke="black" stroke-width="0.5" transform="rotate(84, 164, 81)"/>
+                <line x1="163" y1="66" x2="164" y2="92" stroke="black" stroke-width="0.5" stroke-linecap="round"/>
+                <ellipse cx="138" cy="92" rx="18" ry="10" fill="#699631" stroke="black" stroke-width="0.5" transform="rotate(20, 138, 92)"/>
+                <line x1="125" y1="87" x2="148" y2="97" stroke="black" stroke-width="0.5" stroke-linecap="round"/>
+                <ellipse cx="150" cy="87" rx="21" ry="12" fill="#7FB134" stroke="black" stroke-width="0.5" transform="rotate(50, 150, 87)"/> 
+                <line x1="142" y1="76" x2="158" y2="98" stroke="black" stroke-width="0.5" stroke-linecap="round"/>
+            </g>
+            
+            <use  class="leave1" href="#leave1" x="0" y="0"/>
+        </svg>
+    </section>
+
+    <section class="scene1">
+
+        <div class="textbox">
+            처음 나는 남들보다 잘하고 싶다는 마음이 강했다.</br>
+            자연스레 주변 사람들과 자신을 비교했고, 그들이 걷는 방식과 성공 전략을 그대로 따라 하면</br>
+            나 또한 그 끝에 도달할 수 있을 것이라 믿었다. 
+        </div>
+
+        <svg viewBox="0 0 170 100" xmlns="http://www.w3.org/2000/svg" style="width: fit-content; height: 100%; margin: auto; display: block; background-color: aliceblue;">
+            
+            <defs>
+                <g id="grass">
+                    <line x1="10" y1="55" x2="10" y2="68" stroke="black" stroke-width="1" stroke-linecap="round"/>
+                    <ellipse cx="5" cy="55" rx="6" ry="3.5" fill="#416420" stroke="black" stroke-width="0.5" transform="rotate(25, 5, 55)"/>
+                    <ellipse cx="15" cy="55" rx="6" ry="3.5" fill="#416420" stroke="black" stroke-width="0.5" transform="rotate(150, 15, 55)"/>
+                </g>
+
+                <g id="ground">
+                    <path 
+                        d="
+                        M 0 11
+                        A 12 11, 0, 0, 1, 24 11" 
+                        fill="#719C31" 
+                        stroke="black" 
+                        stroke-width="0.5"
+                    />
+                </g>
+
+                <!-- <linearGradient id="MyseedColor">
+                    <stop offset="0%" style="stop-color:#ebc20f;" /> 
+                    <stop offset="30%" style="stop-color:#ba7909;" />
+                    <stop offset="100%" style="stop-color:#935500;" />
+                </linearGradient> -->
+            </defs>
+
+            <!-- 배경 -->
+            <g>
+                <circle cx="130" cy="100" r="80" fill="#699631"/>
+                <circle cx="10" cy="100" r="70" fill="#5B9436"/>
+                <circle cx="65" cy="90" r="50" fill="#81B141"/>
+                <rect x="0" y="65" width="170" height="35" fill="#719C31"/>
+            </g>
+
+            <!-- 다른 새싹 -->
+            <g class="grasses">
+                <use href="#grass" x="15" y="5"/>
+                <use href="#grass" x="130" y="8"/>
+            </g>
+
+            <g class="seeds">
+                <circle cx="25" cy="75" r="5" fill="#935500" stroke="black" stroke-width="0.5"/>
+                <circle cx="140" cy="78" r="5" fill="#935500" stroke="black" stroke-width="0.5"/>
+
+                <!-- 내 씨앗 -->
+                <circle class="Myseed" cx="83" cy="73" r="4" fill="#935500" stroke="black" stroke-width="0.5"/>
+            </g>
+
+            
+
+            <use href="#ground" x="14" y="70"/>
+            <use href="#ground" x="129" y="73"/>
+            <use href="#ground" x="71" y="67"/>
+            
+            <circle class="Myseed1" cx="83" cy="73" r="5" fill="#935500" stroke="black" stroke-width="0.5"/>
+        </svg>
+
+    </section>
+
+    <section class="scene2">
+
+        <div class="textbox">
+            그래서 나를 끊임없이 채찍질하며 결과만을 바라봤다.</br>
+            그러나 시간이 지날수록 나는 더 공허해졌고,</br>
+            겉모습만 그럴듯해 보일 뿐 정작 내 안의 알맹이는 성장하지 못하고 있었다.  
+        </div>
+        <svg viewBox="0 0 170 100" xmlns="http://www.w3.org/2000/svg" style="width: auto; height: 100%; margin: auto; display: block; background-color: aliceblue;">
+            <!-- 햇빛 색상 -->
+            <defs>
+                <linearGradient id="verticalGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                
+                    <stop offset="0%" style="stop-color:#ffc548;stop-opacity:1" /> 
+                    
+                    <stop offset="50%" style="stop-color:rgba(255, 222, 123, 0.5);stop-opacity:1" />
+
+                    <stop offset="100%" style="stop-color:#b9be552f;stop-opacity:1" />
+                
+                </linearGradient>
+            </defs>
+
+            <!-- 해 -->
+            <defs>
+                <g id="sun">
+                    <polygon 
+                        points="
+                        5,0   19,0   24,60   0,60   "
+                        fill="url(#verticalGradient)"
+                    />
+                    <circle cx="12" cy="0" r="7" fill="#FFDF7B"/>
+                    <path 
+                        d="
+                        M 0 11
+                        A 12 11, 0, 0, 0, 24 11" 
+                        fill="#b9be552f"
+                        transform="translate(0, 49) "
+                    />
+                </g>
+            </defs>
+
+            <!-- 배경 -->
+            <circle cx="130" cy="100" r="80" fill="#699631"/>
+            <circle cx="10" cy="100" r="70" fill="#5B9436"/>
+            <circle cx="65" cy="90" r="50" fill="#81B141"/>
+            <rect x="0" y="65" width="170" height="35" fill="#719C31"/>
+
+            
+
+            <!-- 구멍 -->
+            <ellipse class="hole" cx="85" cy="74" rx="14" ry="7" fill="black" stroke="black" stroke-width="0.5"/>
+            
+            <!-- 내 씨앗 -->
+            <circle class="Myseed" cx="85" cy="70" r="4.8" fill="#935500" stroke="black" stroke-width="0.5"/>
+            
+            <rect x="0" y="81" width="170" height="35" fill="#719C31"/>
+        
+            <use href="#sun" x="15" y="15" class="sun"/>
+
+        </svg>
+    </section>
+
+    <section class="scene3">
+
+        <div class="textbox">
+            무엇을 좋아하는지, 무엇을 잘하는지도 알지 못한 채</br>
+            끝없이 아래로 떨어지는 듯한 느낌만 커졌다.    
+        </div>
+
+        <svg viewBox="0 0 170 100" xmlns="http://www.w3.org/2000/svg" style="width: auto; height: 100%; margin: auto; display: block; background-color: aliceblue;">
+
+            <defs>
+                <linearGradient id="bgGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%" style="stop-color:#935500;" /> 
+                    <stop offset="100%" style="stop-color:#482900;" />
+                </linearGradient>
+            </defs>
+
+            <defs>
+                <linearGradient id="holeGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%" style="stop-color:#634414;" /> 
+                    <stop offset="100%" style="stop-color:#1E1300;" />
+                </linearGradient>
+            </defs>
+            
+            <rect x="0" y="0" width="170" height="100" fill="url(#bgGradient)"/>
+            <polygon points="65,0   105,0   130,100   40,100"fill="url(#holeGradient)"/>
+
+            <!-- 땅 구멍 -->
+            <circle cx="25" cy="20" r="3" fill="#462C00"/>
+            <circle cx="40" cy="50" r="5" fill="#462C00"/>
+            <circle cx="14" cy="70" r="6" fill="#462C00"/>
+            <circle cx="140" cy="22" r="4" fill="#462C00"/>
+            <circle cx="134" cy="40" r="6" fill="#462C00"/>
+            <circle cx="155" cy="65" r="3" fill="#462C00"/>
+
+            <rect class="worm" x="53" y="35" width="23" height="5" rx="3" ry="3" fill="#FFC2A9" stroke="black" stroke-width="0.5" transform="rotate(125, 53, 35)"/>
+            <rect class="worm1" x="119" y="21" width="27" height="5" rx="3" ry="3" fill="#FFC2A9" stroke="black" stroke-width="0.5" transform="rotate(45, 119, 21)"/>
+
+            <!-- 내 씨앗 -->
+            <circle class="seed" cx="85" cy="70" r="20" fill="#935500" stroke="black" stroke-width="0.5"/>
+        </svg>
+    </section>
+
+    <section class="scene4">
+        
+        <div class="textbox">
+            이 무너짐의 순간,</br>
+            오히려 나는 ‘지금 내게 진짜 중요한 것이 무엇인지’</br>
+            스스로에게 질문해야 한다는 사실을 깨달았다. 
+        </div>
+
+        <svg viewBox="0 0 170 100" xmlns="http://www.w3.org/2000/svg" style="width: auto; height: 100%; margin: auto; display: block; background-color: aliceblue;">
+            
+            <defs>
+                <g id="grassshadow">
+                    <line x1="13" y1="10" x2="13" y2="23" stroke="#7FC3E6" stroke-width="3" stroke-linecap="round"/>
+                    <ellipse cx="6" cy="25" rx="8" ry="4" fill="#7FC3E6" transform="rotate(155, 6, 25)"/>
+                    <ellipse cx="20" cy="25" rx="8" ry="4" fill="#7FC3E6" transform="rotate(30, 20, 25)"/>
+                </g>
+            </defs>
+
+            <!-- 움직이는 씨앗과 그림자-->
+            <defs>
+                <g id="seed">
+                    <circle cx="0" cy="5" r="5" fill="#7FC3E6"/>
+                    <circle cx="0" cy="0" r="4" fill="#935500" stroke="black" stroke-width="0.5"/>
+                </g>
+            </defs>
+            
+            <!-- 물 -->
+            <rect x="0" y="0" width="170" height="100" fill="#ACDBEE"/>
+
+            <!-- 씨앗 그림자-->
+            <circle cx="85" cy="0" r="35" fill="#7FC3E6" class="seedShadow"/>
+
+            <use href="#grassshadow" x="72" y="24" class="grassShadow"/>
+            
+            <!-- 물 파동 -->
+            <g class="water">
+                <circle cx="85" cy="0" r="50" fill="none" stroke="#fff" stroke-width="0.5"/>
+                <circle cx="85" cy="0" r="80" fill="none" stroke="#fff" stroke-width="0.5"/>
+            </g>
+
+            <!-- 내 씨앗 -->
+            <use href="#seed" x="85" y="80" class="seeds"/>
+            
+        </svg>
+    </section>
+
+    <section class="scene5">
+
+        <div class="textbox">
+            그렇게 나는 잠시 걸음을 멈추고,</br>
+            나라는 존재를 다시 공부하고 찾아보기로 했다.
+        </div>
+
+        <svg viewBox="0 0 170 100" xmlns="http://www.w3.org/2000/svg" style="width: auto; height: 100%; margin: auto; display: block; background-color: aliceblue;">
+            
+            <!-- 해 -->
+            <circle class="sun5" cx="27" cy="15" r="7" fill="#FFDF7B"/>
+
+            <!-- 산 -->
+            <ellipse cx="108" cy="65" rx="30" ry="60" fill="#98B244"/>
+            <ellipse cx="147" cy="85" rx="34" ry="60" fill="#C9DB57"/>
+            <circle cx="24" cy="77" r="42" fill="#98B244"/>
+            <circle cx="72" cy="80" r="38" fill="#C9DB57"/>
+            <rect x="0" y="70" width="170" height="35" fill="#7BA738"/>
+
+            <!-- 내 씨앗 -->
+            <circle class="seeds" cx="85" cy="80" r="4" fill="#935500" stroke="black" stroke-width="0.5"/>
+            <use href="#ground" x="73" y="75"/>
+            
+            <g>
+                <ellipse cx="10" cy="85" rx="20" ry="12" fill="#699631" stroke="black" stroke-width="0.5" transform="rotate(110, 10, 85)"/>
+                <line x1="14" y1="73" x2="5" y2="95" stroke="black" stroke-width="0.5" stroke-linecap="round"/>
+                <ellipse cx="24" cy="92" rx="18" ry="10" fill="#7FB134" stroke="black" stroke-width="0.5" transform="rotate(150, 24, 92)"/>
+                <line x1="34" y1="85" x2="14" y2="99" stroke="black" stroke-width="0.5" stroke-linecap="round"/>
+            </g>
+
+            <g>
+                <ellipse cx="164" cy="81" rx="22" ry="12" fill="#699631" stroke="black" stroke-width="0.5" transform="rotate(84, 164, 81)"/>
+                <line x1="163" y1="66" x2="164" y2="92" stroke="black" stroke-width="0.5" stroke-linecap="round"/>
+                <ellipse cx="138" cy="92" rx="18" ry="10" fill="#699631" stroke="black" stroke-width="0.5" transform="rotate(20, 138, 92)"/>
+                <line x1="125" y1="87" x2="148" y2="97" stroke="black" stroke-width="0.5" stroke-linecap="round"/>
+                <ellipse cx="150" cy="87" rx="21" ry="12" fill="#7FB134" stroke="black" stroke-width="0.5" transform="rotate(50, 150, 87)"/> 
+                <line x1="142" y1="76" x2="158" y2="98" stroke="black" stroke-width="0.5" stroke-linecap="round"/>
+            </g>
+
+            <defs>
+                <g id="rain">
+                    <line x1="16" y1="46" x2="16" y2="70" stroke="#7FC3E6" stroke-width="3" stroke-linecap="round"/>
+                    <line x1="24" y1="38" x2="24" y2="53" stroke="#7FC3E6" stroke-width="3" stroke-linecap="round"/>
+                    <line x1="36" y1="20" x2="36" y2="30" stroke="#7FC3E6" stroke-width="3" stroke-linecap="round"/>
+                    <line x1="80" y1="26" x2="80" y2="45" stroke="#7FC3E6" stroke-width="3" stroke-linecap="round"/>
+                    <line x1="86" y1="37" x2="86" y2="53" stroke="#7FC3E6" stroke-width="3" stroke-linecap="round"/>
+                    <line x1="124" y1="58" x2="124" y2="85" stroke="#7FC3E6" stroke-width="3" stroke-linecap="round"/>
+                    <line x1="150" y1="12" x2="150" y2="28" stroke="#7FC3E6" stroke-width="3" stroke-linecap="round"/>
+                </g>
+            </defs>
+
+            <g class="rain">
+                <use href="#rain" x="0" y="-20"/>
+                <use href="#rain" x="70" y="30" />
+                <use href="#rain" x="-80" y="30" />
+            </g>       
+        </svg>
+    </section>
+
+    <section class="scene6">
+        
+        <div class="textbox">
+            혼자 여행을 떠나고,</br>
+            여러 아르바이트를 경험하고,</br>
+            다양한 분야를 공부하며 나의 관심과 강점을 탐색하는 시간을 가졌다. 
+        </div>
+
+        <svg viewBox="0 0 170 100" xmlns="http://www.w3.org/2000/svg" style="width: auto; height: 100%; margin: auto; display: block; background-color: aliceblue;">
+            
+            <!-- 해 -->
+            <circle cx="27" cy="15" r="7" fill="#FFDF7B"/>
+
+            <!-- 산 -->
+            <ellipse cx="108" cy="65" rx="30" ry="60" fill="#98B244"/>
+            <ellipse cx="147" cy="85" rx="34" ry="60" fill="#C9DB57"/>
+            <circle cx="24" cy="77" r="42" fill="#98B244"/>
+            <circle cx="72" cy="80" r="38" fill="#C9DB57"/>
+            <rect x="0" y="70" width="170" height="35" fill="#7BA738"/>
+
+            <!-- 양옆 잎 -->
+            <g>
+                <ellipse cx="10" cy="85" rx="20" ry="12" fill="#699631" stroke="black" stroke-width="0.5" transform="rotate(110, 10, 85)"/>
+                <line x1="14" y1="73" x2="5" y2="95" stroke="black" stroke-width="0.5" stroke-linecap="round"/>
+                <ellipse cx="24" cy="92" rx="18" ry="10" fill="#7FB134" stroke="black" stroke-width="0.5" transform="rotate(150, 24, 92)"/>
+                <line x1="34" y1="85" x2="14" y2="99" stroke="black" stroke-width="0.5" stroke-linecap="round"/>
+            </g>
+            <!-- 양옆 잎 -->
+            <g>
+                <ellipse cx="164" cy="81" rx="22" ry="12" fill="#699631" stroke="black" stroke-width="0.5" transform="rotate(84, 164, 81)"/>
+                <line x1="163" y1="66" x2="164" y2="92" stroke="black" stroke-width="0.5" stroke-linecap="round"/>
+                <ellipse cx="138" cy="92" rx="18" ry="10" fill="#699631" stroke="black" stroke-width="0.5" transform="rotate(20, 138, 92)"/>
+                <line x1="125" y1="87" x2="148" y2="97" stroke="black" stroke-width="0.5" stroke-linecap="round"/>
+                <ellipse cx="150" cy="87" rx="21" ry="12" fill="#7FB134" stroke="black" stroke-width="0.5" transform="rotate(50, 150, 87)"/> 
+                <line x1="142" y1="76" x2="158" y2="98" stroke="black" stroke-width="0.5" stroke-linecap="round"/>
+            </g>
+
+            <g class="blueFlower" id="blueFlower">
+                <!-- 파란색 첫번째 꽃 -->
+                <circle cx="23" cy="47" r="4" fill="#FFE668"/>
+                <circle cx="23" cy="43" r="4" fill="#7AA9F9"/>
+                <circle cx="18" cy="47" r="4" fill="#7AA9F9"/>
+                <circle cx="28" cy="47" r="4" fill="#7AA9F9"/>
+                <circle cx="20" cy="52" r="4" fill="#7AA9F9"/>
+                <circle cx="26" cy="52" r="4" fill="#7AA9F9"/>
+            </g>
+            <g class="pinkFlower" id="pinkFlower">
+                <!-- 분홍색 두번째 꽃 -->
+                <circle cx="128" cy="37" r="4" fill="#FFE668"/>
+                <circle cx="128" cy="33" r="4" fill="#F04D65"/>
+                <circle cx="123" cy="37" r="4" fill="#F04D65"/>
+                <circle cx="133" cy="37" r="4" fill="#F04D65"/>
+                <circle cx="125" cy="42" r="4" fill="#F04D65"/>
+                <circle cx="131" cy="42" r="4" fill="#F04D65"/>
+            </g>
+            <g class="yellowFlower" id="yellowFlower">
+                <!-- 노란색 세번째 꽃 -->
+                <circle cx="146" cy="58" r="4" fill="#FFE668"/>
+                <circle cx="146" cy="54" r="4" fill="#EDB828"/>
+                <circle cx="141" cy="58" r="4" fill="#EDB828"/>
+                <circle cx="151" cy="58" r="4" fill="#EDB828"/>
+                <circle cx="143" cy="63" r="4" fill="#EDB828"/>
+                <circle cx="149" cy="63" r="4" fill="#EDB828"/>
+            </g>
+
+            <use href="#ground" x="73" y="75"/>
+
+            <use class="leave2" href="#leave2" x="0" y="0"/>
+            <use  class="leave1" href="#leave1" x="0" y="0"/>
+
+        </svg>
+    </section>
+
+    <section class="scene7">
+                
+        <div class="textbox">
+            그 시간을 지나며 나는 비로소 나만의 방식으로 성장하기 시작했다. </br>
+            외부의 속도에 맞추던 과거와 달리, 이제는 과정 전체를 설계하고 주도하는 사람이 되었다.
+        </div>
+        
+        <svg viewBox="0 0 170 100" xmlns="http://www.w3.org/2000/svg" style="width: auto; height: 100%; margin: auto; display: block; background-color: aliceblue;">
+             <!-- 해 -->
+            <circle cx="27" cy="15" r="7" fill="#FFDF7B"/>
+            
+            <defs>
+                <g id="brach">
+                    <rect x="0" y="0" width="7" height="50" rx="4" fill="#8D5202" />
+                </g>
+
+            <g id="leave2">
+                <rect x="85" y="45" width="1" height="20" fill="#7FB134" stroke="black" stroke-width="0.5" />
+                <ellipse cx="80" cy="45" rx="6" ry="3.5" fill="#7FB134" stroke="black" stroke-width="0.5" transform="rotate(25, 80, 45)"/>
+                <ellipse cx="90" cy="45" rx="6" ry="3.5" fill="#7FB134" stroke="black" stroke-width="0.5" transform="rotate(150, 90, 45)"/>
+            </g>
+            
+            <g id="leave1">
+                <rect x="85" y="65" width="1" height="13" fill="#7FB134" stroke="black" stroke-width="0.5" />
+                <ellipse cx="80" cy="65" rx="6" ry="3.5" fill="#7FB134" stroke="black" stroke-width="0.5" transform="rotate(25, 80, 65)"/>
+                <ellipse cx="90" cy="65" rx="6" ry="3.5" fill="#7FB134" stroke="black" stroke-width="0.5" transform="rotate(150, 90, 65)"/>
+            </g>
+            </defs>
+            
+            <g id="leaves">
+                <g class="deepleave">
+                    <circle cx="94" cy="20" r="27" fill="#699631"  stroke="black" stroke-width="0.5"/>
+                    <circle cx="75" cy="70" r="20" fill="#699631"  stroke="black" stroke-width="0.5"/>
+                    <circle cx="100" cy="50" r="30" fill="#699631"/>
+                    <circle cx="140" cy="30" r="20" fill="#699631"  stroke="black" stroke-width="0.5"/>
+                </g>
+
+                <g class="shallowleave">
+                    <circle cx="150" cy="57" r="30" fill="#7FB134"/>
+                    <circle cx="62" cy="38" r="20" fill="#7FB134"/>
+                </g>
+
+                <g class="wood">
+                    <use href="#brach" x="150" y="55" transform="rotate(48, 150, 55)"/>
+                    <use href="#brach" x="70" y="40" transform="rotate(-32, 70, 27)"/>
+                    <use href="#brach" x="50" y="71" transform="rotate(-60, 50, 71)"/>
+                    <rect x="85" y="50" width="40" height="90" rx="20" fill="#8D5202" />
+                </g>
+
+                <g class="shallowleave">
+                    <circle cx="45" cy="65" r="25" fill="#7FB134" stroke="black" stroke-width="0.5"/>
+                    <circle cx="108" cy="41" r="20" fill="#7FB134" stroke="black" stroke-width="0.5"/>
+                </g>
+
+                <g class="apple">
+                    <circle cx="34" cy="66" r="5" fill="#F54F39"/>
+                    <circle cx="48" cy="76" r="4" fill="#F54F39"/>
+                    <circle cx="102" cy="34" r="6" fill="#F54F39"/>
+                    <circle cx="135" cy="56" r="5" fill="#F54F39"/>
+                    <circle cx="157" cy="46" r="7" fill="#F54F39"/>
+                </g>
+            </g>
+
+            <image class="img1" href="img/img5.png" x="47" y="30" width="20" height="20" clip-path="url(#rounded-image-clip5)" />
+
+            <defs>
+                <clipPath id="rounded-image-clip1">
+                    <rect x="126" y="20" width="13" height="13" rx="10" ry="10" />
+                </clipPath>
+                <!-- <clipPath id="rounded-image-clip2">
+                    <rect x="47" y="34" width="20" height="20" rx="10" ry="10" />
+                </clipPath> -->
+                <clipPath id="rounded-image-clip3">
+                    <rect x="150" y="35" width="10" height="10" rx="10" ry="10" />
+                </clipPath>
+                <clipPath id="rounded-image-clip4">
+                    <rect x="34" y="58" width="15" height="15" rx="10" ry="10" />
+                </clipPath>
+                <clipPath id="rounded-image-clip5">
+                    <rect x="47" y="30" width="20" height="20" rx="10" ry="10" />
+                </clipPath>
+            </defs>
+            
+        </svg>
+    </section>
+        
+    <section class="scene8">
+                        
+        <div class="textbox">
+            그 변화는 곧 성과로 이어졌다. 첫 대회에서 대상을 받고,</br>
+            다양한 대회에서 수상하고 여러 프로그램에 참여하며, </br>
+            단순히 한 문제를 해결하는 수준을 넘어 넓은 세계를 향해 도전할 수 있는 사람이 되었다.
+        </div>
+
+        <svg viewBox="0 0 170 100" xmlns="http://www.w3.org/2000/svg" style="width: auto; height: 100%; margin: auto; display: block; background-color: aliceblue;">
+            <defs>
+                <g id="foliage">
+                    <circle cx="0" cy="8" r="14" fill="#7FB134"stroke="black" stroke-width="0.5"/>
+                    <circle cx="12" cy="0" r="14" fill="#7FB134"  />
+                    <circle cx="27" cy="8" r="14" fill="#7FB134"  stroke="black" stroke-width="0.5"/>
+                </g>
+            </defs>
+
+            <rect x="85" y="-5" width="40" height="110" fill="#8D5202" />
+
+            <g class="right">
+                <use href="#brach" x="150" y="25" transform="rotate(48, 150, 25)"/>
+                <use href="#foliage" x="132" y="20" transform="rotate(20, 132, 20)"/>
+            </g>
+            
+            <g class="left">
+                <use href="#brach" x="50" y="71" transform="rotate(-60, 50, 71)"/>
+                <use href="#foliage" x="35" y="62" transform="rotate(-24, 35, 62)"/>
+            </g>
+            <!-- <circle cx="130" cy="24" r="5" fill="#F54F39"/>
+            <circle cx="154" cy="39" r="4" fill="#F54F39"/>
+            <circle cx="40" cy="64" r="6" fill="#F54F39"/> -->
+
+            <image class="img1" href="img/img5.png" x="47" y="30" width="20" height="20" clip-path="url(#rounded-image-clip5)"/>
+
+            <image class="img2" href="img/img1.png" x="126" y="20" width="13" height="13" clip-path="url(#rounded-image-clip1)" />
+            <!-- <image href="img/img2.png" x="47" y="34" width="20" height="20" clip-path="url(#rounded-image-clip2)" /> -->
+            <image class="img3" href="img/img3.png" x="150" y="35" width="10" height="10" clip-path="url(#rounded-image-clip3)" />
+            <image class="img4" href="img/img4.png" x="34" y="58" width="15" height="15" clip-path="url(#rounded-image-clip4)" />
+        </svg>
+    </section>
+
+    <section class="scene9">
+                                
+        <div class="textbox">
+            새싹처럼 막 시작한 프로젝트, 꽃처럼 화려한 성과를 낸 프로젝트, 나무처럼 꾸준히 이어가는 프로젝트까지</br>
+            한때 앞마당처럼 좁게만 느껴졌던 나의 세상은 이제 넓은 들판 같은 정원이 되었다.
+        </div>
+
+        <svg viewBox="0 0 170 100" xmlns="http://www.w3.org/2000/svg" style="width: auto; height: 100%; margin: auto; display: block; background-color: aliceblue;">
+            <defs>
+                <g id="foliage">
+                    <circle cx="12" cy="0" r="14" fill="#7FB134"/>
+                    <circle cx="0" cy="8" r="14" fill="#7FB134"/>
+                    <circle cx="27" cy="8" r="14" fill="#7FB134"/>
+                </g>
+
+                <g id="tree">
+                    <use href="#leaves" x="0" y="-90"/>
+                    <rect x="85" y="-5" rx="20"  width="40" height="130" fill="#8D5202" />
+
+                    <use href="#brach" x="150" y="25" transform="rotate(48, 150, 25)"/>
+                    <use href="#brach" x="50" y="71" transform="rotate(-60, 50, 71)"/>
+
+                    <use href="#foliage" x="132" y="20" transform="rotate(20, 132, 20)"/>
+                    <use href="#foliage" x="35" y="62" transform="rotate(-24, 35, 62)"/>
+
+                    <circle cx="130" cy="24" r="5" fill="#F54F39"/>
+                    <circle cx="154" cy="39" r="4" fill="#F54F39"/>
+                    <circle cx="40" cy="64" r="6" fill="#F54F39"/>
+                </g>
+            </defs>
+
+            <!-- 해 -->
+            <circle cx="27" cy="15" r="7" fill="#FFDF7B"/>
+
+            <!-- 산 -->
+            <circle cx="60" cy="75" r="38" fill="#98B244"/>
+            <circle cx="155" cy="72" r="38" fill="#98B244"/>
+            <circle cx="125" cy="105" r="50" fill="#C9DB57"/>
+            <circle cx="24" cy="87" r="42" fill="#C9DB57"/>
+            <rect x="0" y="72" width="170" height="35" fill="#C9DB57"/>
+
+            <g class="tree">
+                <use href="#tree" x="180" y="80" transform="scale(0.4)"/>
+                <use href="#tree" x="-40" y="150" transform="scale(0.2)"/>
+            </g>
+            
+            <g class="flower">
+                <use href="#blueFlower" x="190" y="70" transform="scale(0.7)"/>
+                <use href="#pinkFlower" x="-14" y="80" transform="scale(0.7)"/>
+                <use href="#yellowFlower" x="-50" y="80" transform="scale(0.7)"/>
+                <use href="#blueFlower" x="50" y="100" transform="scale(0.6)"/>
+                <use href="#blueFlower" x="0" y="65" transform="scale(0.8)"/>
+                <use href="#pinkFlower" x="-70" y="120" transform="scale(0.5)"/>
+                <use href="#yellowFlower" x="80" y="90" transform="scale(0.6)"/>
+                <use href="#yellowFlower" x="30" y="95" transform="scale(0.6)"/>
+            </g>
+        
+            <g class="leave">
+                <use class="leave2" href="#leave2" x="-80" y="0" transform="scale(0.5)"/>
+                <use  class="leave1" href="#leave1" x="-150" y="-50" transform="scale(0.4)"/>
+                <use  class="leave1" href="#leave1" x="0" y="10" transform="scale(0.4)"/>
+                <use class="leave2" href="#leave2" x="130" y="15" transform="scale(0.5)"/>
+            </g>
+        </svg>
+    </section>
+
+    <section class="scene10">
+        <div>
+            <div>
+                Garden Story
+            </div>
+        </div>
+        <svg viewBox="0 0 170 100" xmlns="http://www.w3.org/2000/svg" style="width: auto; height: 100%; margin: auto; display: block; background-color: black;">
+            <g class="all">
+                <!-- 해 -->
+                <circle class="sun5" cx="27" cy="15" r="7" fill="#FFDF7B"/>
+
+                <!-- 산 -->
+                <ellipse cx="108" cy="65" rx="30" ry="60" fill="#98B244"/>
+                <ellipse cx="147" cy="85" rx="34" ry="60" fill="#C9DB57"/>
+                <circle cx="24" cy="77" r="42" fill="#98B244"/>
+                <circle cx="72" cy="80" r="38" fill="#C9DB57"/>
+                <rect x="0" y="70" width="170" height="35" fill="#7BA738"/>
+                
+                <g>
+                    <ellipse cx="10" cy="85" rx="20" ry="12" fill="#699631" stroke="black" stroke-width="0.5" transform="rotate(110, 10, 85)"/>
+                    <line x1="14" y1="73" x2="5" y2="95" stroke="black" stroke-width="0.5" stroke-linecap="round"/>
+                    <ellipse cx="24" cy="92" rx="18" ry="10" fill="#7FB134" stroke="black" stroke-width="0.5" transform="rotate(150, 24, 92)"/>
+                    <line x1="34" y1="85" x2="14" y2="99" stroke="black" stroke-width="0.5" stroke-linecap="round"/>
+                </g>
+
+                <g>
+                    <ellipse cx="164" cy="81" rx="22" ry="12" fill="#699631" stroke="black" stroke-width="0.5" transform="rotate(84, 164, 81)"/>
+                    <line x1="163" y1="66" x2="164" y2="92" stroke="black" stroke-width="0.5" stroke-linecap="round"/>
+                    <ellipse cx="138" cy="92" rx="18" ry="10" fill="#699631" stroke="black" stroke-width="0.5" transform="rotate(20, 138, 92)"/>
+                    <line x1="125" y1="87" x2="148" y2="97" stroke="black" stroke-width="0.5" stroke-linecap="round"/>
+                    <ellipse cx="150" cy="87" rx="21" ry="12" fill="#7FB134" stroke="black" stroke-width="0.5" transform="rotate(50, 150, 87)"/> 
+                    <line x1="142" y1="76" x2="158" y2="98" stroke="black" stroke-width="0.5" stroke-linecap="round"/>
+                </g>
+            </g>
+            
+            <use  class="leave10" href="#leave1" x="0" y="0"/>
+        </svg>
+    </section>
+</body>
+<script src="interaction.js"></script></body> 
+</html>
