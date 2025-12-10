@@ -666,8 +666,6 @@ function animateScene10(progress) {
         const currentScale = startScale + (endScale - startScale) * eased;
 
         leave10.style.transform = `scale(${currentScale})`;
-    }else {
-        all.classList.add("active1")
     }
 }
 
