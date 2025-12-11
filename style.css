@@ -260,8 +260,8 @@ section {
     font-weight: 500;
     padding: 5%;
     margin-left: 1%;
-    /* border-radius: 20%; */
-    /* backdrop-filter: blur(10px); */
+    border-radius: 20%;
+    backdrop-filter: blur(5px);
 }
 
 .active {
